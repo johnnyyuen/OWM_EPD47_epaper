@@ -1,7 +1,19 @@
 // Due to the license issue, I will just post the fix part. For the rest of code, please go to the original GitHub link ( I think you should have it already )
 .
 .
-.
+void InitialiseSystem() {
+  .
+  .
+  .
+  .
+  .
+  //while (!Serial);
+  .
+  .
+  .
+  .
+  .
+}.
 .
 .
 .
