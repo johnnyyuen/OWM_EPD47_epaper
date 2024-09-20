@@ -14,6 +14,11 @@ void InitialiseSystem() {
   .
   .
 }.
+
+.
+.
+.
+bool DecodeWeather(WiFiClient& json, String Type) {
 .
 .
 .
@@ -26,9 +31,11 @@ while ((RxWeather == false || RxForecast == false) && Attempts <= 2) { // Try up
 .
 .
 .
-.
-.
 
+bool DecodeWeather(WiFiClient& json, String Type) {
+.
+.
+.
 // Update the field mapping
 if (Type == "weather") {
     // All Serial.println statements are for diagnostic purposes and some are not required, remove if not needed with //
@@ -67,5 +74,13 @@ if (Type == "forecast") {
 .
 .
 
-      }
-    }
+ }
+
+}
+
+void DisplayStatusSection(int x, int y, int rssi) {
+  .
+  .
+  DrawRSSI(x + 308, y, rssi);
+  .
+}
